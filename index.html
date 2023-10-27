@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body>
+
+    <div class="main-cont">
+        <header>
+            <h1>TIC TAC TOE</h1>
+        </header>
+
+        <section class="leaderboard">
+            <div class="player-cont player1">
+                <div class="player-btn-cont left">
+                    <button class="btn" id="player1-name-btn">P1</button>
+                </div>
+                <div class="player-name-cont">
+                    <p class="leaderboard-desc">Name:</p>
+                    <p class="player-name" id="player1-name">Player1</p>
+                </div>
+                <div class="player-score-cont">
+                    <p class="leaderboard-desc">Score:</p>
+                    <p class="player-score" id="player1-score">0</p>
+                </div>
+            </div>
+            <div class="player-cont">
+                <div class="player-btn-cont right">
+                    <button class="btn" id="player2-comp-btn">Com</button>
+                    <button class="btn" id="player2-name-btn">P2</button>
+                </div>
+                <div class="player-name-cont player2">
+                    <p  class="leaderboard-desc">Name:</p>
+                    <p class="player-name" id="player2-name">Player2</p>
+                </div>
+                <div class="player-score-cont">
+                    <p class="leaderboard-desc">Score:</p>
+                    <p class="player-score" id="player2-score">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gameboard">
+            <div class="field" id="f00"></div>
+            <div class="field" id="f01"></div>
+            <div class="field" id="f02"></div>
+            <div class="field" id="f10"></div>
+            <div class="field" id="f11"></div>
+            <div class="field" id="f12"></div>
+            <div class="field" id="f20"></div>
+            <div class="field" id="f21"></div>
+            <div class="field" id="f22"></div>
+        </section>
+
+        <section class="btns-section">
+            <button class="btn" id="new-game-btn">NEW GAME</button>
+            <button class="btn" id="reset-all-btn">RESET</button>
+        </section>
+        <footer>
+            <p class="footer-text">made by ivrlic</p>
+        </footer>
+    </div>
+    <div class="modal-msg" id="modal-msg">
+        <div class="info-modal-msg">
+            <p class="modal-msg-text" id="modal-msg-text">Welcome to TIC TAC TOE game. Let's play!</p>
+            <div class="new-name-modal" id="new-name-modal">
+                <p class="modal-input-text ">Enter the name and choose your sign:</p>
+                <input type="text" class="input-new-name" id="input-new-name">
+                <div class="modal-img-cont">
+                    <div class="img-cont" id="img-cont"></div>
+                    <div class="chosen-img-cont" id="chosen-img-cont"></div>
+                </div>
+            </div>
+            <button class="modal-msg-btn" id="modal-msg-btn">OK</button>
+        </div>
+
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
