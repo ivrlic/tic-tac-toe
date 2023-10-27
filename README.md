@@ -1,4 +1,4 @@
-# tic-tac-toe
+# [Live Mode](https://ivrlic.github.io/tic-tac-toe/)
 Tic-tac-toe game. Available 2 players mode and computer mode.
 
 Designed and created as a part of Odin Project.
